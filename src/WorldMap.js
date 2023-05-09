@@ -6,7 +6,7 @@ const geoUrl = "https://raw.githubusercontent.com/lotusms/world-map-data/main/wo
 
 const colorScale = scaleLinear().domain([0,6300000]).range(["#a72bb5", "#0376db"])
 
-const  Map = () =>  {
+const  WorldMap = () =>  {
 
   const [ countries, setCountries ] = useState([])
   const [ continent, setContinents ] = useState([])
@@ -125,4 +125,4 @@ const  Map = () =>  {
   );
 };
 
-export default Map;
+export default WorldMap;

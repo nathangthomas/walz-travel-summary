@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Map from './Map';
+import WorldMap from './WorldMap';
+import USMap from './USMap';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Map />
+    <USMap />
   </React.StrictMode>
 );
 
