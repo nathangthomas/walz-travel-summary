@@ -1,0 +1,7 @@
+.place-list {
+    /* width: 600px; */
+    height: 200px;
+    background-color: var(--not-visited-fill);
+    padding: 20px;
+    margin: 0 auto;
+  }
