@@ -1,14 +1,23 @@
 import React from "react";
-import './variables.css'
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import './styles/variables.css'
 import './styles/app.css'
-import Map from "./Map";
+import HomePage from "./components/HomePage";
+import Form from "./components/Form";
+import Map from "./components/map/Map";
 
-function App() {
-    return(
-    	<div>
-        	<Map/>
-        </div>
-    )
+const App = () => {
+  return(
+  <div className="App">
+    <Router>
+      <Routes>
+      <Route exact path="/" element={<HomePage/>} />
+      <Route exact path="form" element={<Form/>} />
+      <Route exact path="map" element={<Map/>} />
+      </Routes>
+    </Router>
+  </div>
+  )
 }
 
 export default App;

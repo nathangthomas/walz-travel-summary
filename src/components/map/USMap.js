@@ -1,16 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { geoCentroid } from "d3-geo";
-import './variables.css'
+import '../../styles/variables.css'
 import {
   ComposableMap,
   Geographies,
   Geography,
-  Marker,
-  Annotation
 } from "react-simple-maps";
-
-import allStates from "./data/allstates.json";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 

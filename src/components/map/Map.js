@@ -1,8 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
-import './styles/map.css'
+import '../../styles/map/map.css'
 import Banner from "./Banner";
-import Form from "./Form";
 import USMap from "./USMap";
 import PlaceList from "./PlaceList";
 
@@ -17,14 +16,12 @@ const MapBackground = styled.div`
 `
 
 const Map = () => {
-  return (
-    <Form></Form>
-        
-            // <MapBackground>
-            //     <Banner/>
-            //     <USMap/>
-            //     <PlaceList/>
-            // </MapBackground>
+  return (        
+      <MapBackground>
+          <Banner/>
+          <USMap/>
+          <PlaceList/>
+      </MapBackground>
   );
 };
 

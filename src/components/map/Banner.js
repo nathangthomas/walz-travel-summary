@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
-import './styles/banner.css';
+import'../../styles/map/banner.css'
+
 
 const BannerContainer = styled.div`
     height: 250px;

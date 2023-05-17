@@ -1,6 +1,10 @@
-import React, {useState, useRef} from 'react'
+import React, {useState} from 'react'
+import { useNavigate } from 'react-router-dom'
+
 const Form = () => {
     const [formValues, setFormValues] = useState([{ methodOfTravel: "", destination: ""}])
+
+    const navigate = useNavigate();
 
     let handleChange = (i, e) => {
         let newFormValues = [...formValues];
@@ -20,7 +24,7 @@ const Form = () => {
     
     let handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formValues)
+        navigate('/map');
         alert(JSON.stringify(formValues));
     }
 

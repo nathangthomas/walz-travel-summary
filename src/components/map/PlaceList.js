@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import './styles/placeList.css'
+import'../../styles/map/placeList.css'
 
 const PlaceList = () => {
   return (
