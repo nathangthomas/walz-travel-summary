@@ -26,6 +26,11 @@ const USMap = () => {
                             strokeWidth="2"
                             geography={geo}
                             fill="var(--visited-fill"
+                            style={{
+                                default: { outline: "none" },
+                                hover: { outline: "none" },
+                                pressed: { outline: "none" },
+                              }}
                         />
                     :
                         <Geography
@@ -34,6 +39,11 @@ const USMap = () => {
                             strokeWidth="2"
                             geography={geo}
                             fill="var(--not-visited-fill"
+                            style={{
+                                default: { outline: "none" },
+                                hover: { outline: "none" },
+                                pressed: { outline: "none" },
+                              }}
                         />
                 ))}
             </>
